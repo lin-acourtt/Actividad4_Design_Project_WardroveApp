@@ -1,16 +1,16 @@
 import Footer from "./Footer";
-import Body_Suggestions from "./Body_Suggestions";
-import Header from "./Header";
+import Body_Login from "./Body_Login";
+import Header_Login from "./Header_Login";
 import {LanguageProvider} from "/src/hooks/useContext.jsx"
 
-const Page_Suggestions = () => {
+const Page_Login = () => {
 
     return (
     <>
         <LanguageProvider>
         <div className="min-h-screen flex-col font-[Nunito] caret-transparent">
-            <Header />
-            <Body_Suggestions />
+            <Header_Login />
+            <Body_Login />
             <Footer />
         </div>
         </LanguageProvider>
@@ -20,4 +20,4 @@ const Page_Suggestions = () => {
 
 }
 
-export default Page_Suggestions;
+export default Page_Login;

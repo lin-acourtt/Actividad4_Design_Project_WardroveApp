@@ -6,7 +6,9 @@
   --font-nunito: "Nunito", sans-serif; 
 
   --color-custom-text-color: #333333;
+  --color-custom-bg-color: #F1EFF0;
   --color-pink-primary: #F487C4;
   --color-pink-secondary: #FFB3D9;
   --color-pink-accent: #D0A1D5;
+  --color-pink-faded: #FEE6F3
 }

@@ -2,6 +2,14 @@
   "en": {
     "test_text": "Hello, still working on this",
 
+    "login_appname": "Virtual Wardrove App",
+    "login_placeholderemail": "Email",
+    "login_placeholderuser": "User",
+    "login_placeholderpass": "Password",
+    "login_login": "Login",
+    "login_signup": "Sign up",
+    "login_goback": "Go Back",
+
     "header_appname": "Virtual Wardrove App",
     "header_opt1": "Suggestions",
     "header_opt2": "Wardrove",
@@ -17,12 +25,23 @@
 
     "body_sgt_bt1": "Generate",
     "body_sgt_bt2": "Save to Favorites ⭐",
-    "body_sgt_saved": "Successfully saved ✔"
+    "body_sgt_saved": "Successfully saved ✔",
+
+    "footer_appname": "Virtual Wardrove App",
+    "footer_madeby": "Made by Lindsey Acourtt"
 
   },
 
   "es": {
     "test_text": "Hola, aún trabajando en esto",
+
+    "login_appname": "Aplicación de Armario Virtual",
+    "login_placeholderemail": "Correo",
+    "login_placeholderuser": "Usuario",
+    "login_placeholderpass": "Contraseña",
+    "login_login": "Iniciar",
+    "login_signup": "Registrarse",
+    "login_goback": "Regresar",
 
     "header_appname": "Armario Virtual",
     "header_opt1": "Sugerencias",
@@ -39,6 +58,9 @@
 
     "body_sgt_bt1": "Generar",
     "body_sgt_bt2": "Guardar en Favoritos ⭐",
-    "body_sgt_saved": "Guardado exitosamente ✔"
+    "body_sgt_saved": "Guardado exitosamente ✔",
+
+    "footer_appname": "Aplicación de Armario Virtual",
+    "footer_madeby": "Hecho por Lindsey Acourtt"
   }
 }
