@@ -7,5 +7,8 @@ export default defineConfig({
   server: {
     port: 2727,
   },
-  base: "/virtual_wardrove_app/"
+  base: '/', // important
+  build: {
+    outDir: 'dist'
+  }
 })
