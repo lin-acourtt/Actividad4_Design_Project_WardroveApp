@@ -1,0 +1,44 @@
+{
+  "en": {
+    "test_text": "Hello, still working on this",
+
+    "header_appname": "Virtual Wardrove App",
+    "header_opt1": "Suggestions",
+    "header_opt2": "Wardrove",
+    "header_opt2_1": "Gallery",
+    "header_opt2_2": "Labels",
+    "header_opt2_3": "Categories",
+    "header_opt3": "Favorites",
+    "header_opt4": "Guide",
+    "header_opt5": "Account",
+    "header_opt5_1": "Edit",
+    "header_opt5_2": "Theme",
+    "header_opt5_3": "Logout",
+
+    "body_sgt_bt1": "Generate",
+    "body_sgt_bt2": "Save to Favorites ⭐",
+    "body_sgt_saved": "Successfully saved ✔"
+
+  },
+
+  "es": {
+    "test_text": "Hola, aún trabajando en esto",
+
+    "header_appname": "Armario Virtual",
+    "header_opt1": "Sugerencias",
+    "header_opt2": "Armario",
+    "header_opt2_1": "Galería",
+    "header_opt2_2": "Etiquetas",
+    "header_opt2_3": "Categorías",
+    "header_opt3": "Favoritos",
+    "header_opt4": "Guía",
+    "header_opt5": "Cuenta",
+    "header_opt5_1": "Editar",
+    "header_opt5_2": "Tema",
+    "header_opt5_3": "Cerrar sesión",
+
+    "body_sgt_bt1": "Generar",
+    "body_sgt_bt2": "Guardar en Favoritos ⭐",
+    "body_sgt_saved": "Guardado exitosamente ✔"
+  }
+}
