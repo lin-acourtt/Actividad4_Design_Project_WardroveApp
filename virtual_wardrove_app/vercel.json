@@ -6,12 +6,5 @@
             "dest": "/", 
             "status": 200
         }
-    ],
-    "rewrites":
-    [
-        {
-            "src": "/(.*)",
-            "dest": "/index.html"
-        }
     ]
 }
