@@ -1,18 +1,18 @@
 import Footer from "./Footer";
-import Body_Login from "./Body_Login";
-import Header_Login from "./Header_Login";
+import Header from "./Header";
 import {LanguageProvider} from "/src/hooks/useContext.jsx"
 
-const Page_Login = () => {
+import Body_Gallery from "./Body_Gallery.jsx";
+
+const Page_Gallery = () => {
 
     return (
     <>
         <LanguageProvider>
-        <div className="flex min-h-screen flex-col font-[Nunito] caret-transparent">
-            <Header_Login />
-
+        <div className="bg-green-100 flex min-h-screen flex-col font-[Nunito] caret-transparent">
+            <Header />
             <main className="flex-1">
-                <Body_Login />
+                <Body_Gallery />
             </main>
             
             <Footer />
@@ -24,4 +24,4 @@ const Page_Login = () => {
 
 }
 
-export default Page_Login;
+export default Page_Gallery;

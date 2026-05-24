@@ -28,7 +28,47 @@
     "body_sgt_saved": "Successfully saved ✔",
 
     "footer_appname": "Virtual Wardrove App",
-    "footer_madeby": "Made by Lindsey Acourtt"
+    "footer_madeby": "Made by Lindsey Acourtt",
+
+    "category_category": "Category",
+    "category_all": "All",
+    "category_head": "Head",
+    "category_torso_ext": "Torso - Ext",
+    "category_torso": "Torso",
+    "category_dress": "Dress",
+    "category_legs": "Legs",
+    "category_socks": "Socks",
+    "category_shoes": "Shoes",
+
+    "label_label": "Labels",
+    "label_1": "Hat",
+    "label_2": "Scarf", 
+    "label_3": "Glasses",
+    "label_4": "Jacket",
+    "label_5": "Coat", 
+    "label_6": "Sweater", 
+    "label_7": "Shirt", 
+    "label_8": "Blouse", 
+    "label_9": "Long dress", 
+    "label_10": "Short dress", 
+    "label_11": "Skirt", 
+    "label_12": "Pants", 
+    "label_13": "Shorts", 
+    "label_14": "Jeans", 
+    "label_15": "Ankle socks", 
+    "label_16": "Knee socks", 
+    "label_17": "Sneakers", 
+    "label_18": "Boots", 
+
+    "item_new": "New",
+    "item_add": "Add",
+    "item_edit": "Edit",
+    "item_cancel": "Cancel",
+    "item_delete": "Delete",
+    "item_save": "Save",
+
+    "gallery_gallery": "Gallery"
+
 
   },
 
@@ -61,6 +101,46 @@
     "body_sgt_saved": "Guardado exitosamente ✔",
 
     "footer_appname": "Aplicación de Armario Virtual",
-    "footer_madeby": "Hecho por Lindsey Acourtt"
+    "footer_madeby": "Hecho por Lindsey Acourtt",
+
+
+    "category_category": "Categorías",
+    "category_all": "Todas",
+    "category_head": "Cabeza",
+    "category_torso_ext": "Torso - Ext",
+    "category_torso": "Torso",
+    "category_dress": "Vestido",
+    "category_legs": "Piernas",
+    "category_socks": "Medias",
+    "category_shoes": "Zapatos",
+
+    "label_label": "Etiquetas",
+    "label_1": "Sombrero", 
+    "label_2": "Bufanda", 
+    "label_3": "Gafas", 
+    "label_4": "Chaquetón",
+    "label_5": "Abrigo", 
+    "label_6": "Suéter", 
+    "label_7": "Camisa", 
+    "label_8": "Blusa", 
+    "label_9": "Vestido largo", 
+    "label_10": "Vestido corto",
+    "label_11": "Falda", 
+    "label_12": "Pantalones",
+    "label_13": "Shorts", 
+    "label_14": "Jeans", 
+    "label_15": "Tobilleras",
+    "label_16": "Medias de rodilla",
+    "label_17": "Tenis", 
+    "label_18": "Botas", 
+
+    "item_new": "Nuevo",
+    "item_add": "Agregar",
+    "item_edit": "Editar",
+    "item_cancel": "Cancelar",
+    "item_delete": "Eliminar",
+    "item_save": "Guardar",
+
+    "gallery_gallery": "Galería"
   }
 }

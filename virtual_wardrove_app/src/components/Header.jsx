@@ -2,6 +2,8 @@ import React from 'react';
 import translations from "/src/translations/translations.json";
 import { LanguageContext } from '../hooks/useContext.jsx';
 import { useContext } from 'react';
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
 
@@ -12,11 +14,16 @@ const Header = () => {
     const [isOpenAccount, setIsOpenAccount] = React.useState(false);
     {/**Manages the visibility of the drop down menu for the Hamburguer button */}
     const [isOpenHamburger, setIsOpenHamburger] = React.useState(false);
+    {/**Manages the visibility of the "Wardrove" option in drop down menu for the Hamburguer button */}
+    const [isOpenHamburger_Wardrove, setIsOpenHamburger_Wardrove] = React.useState(false);
+    {/**Manages the visibility of the "Account" option in drop down menu for the Hamburguer button */}
+    const [isOpenHamburger_Account, setIsOpenHamburger_Account] = React.useState(false);
     {/*const language = "es";*/}
     const {language, setLanguage} = useContext(LanguageContext);
+    const navigate = useNavigate();
 
     return (
-        <header className="bg-pink-primary text-white shadow-lg shadow-pink-secondary">
+        <header className="bg-pink-primary text-white shadow-lg shadow-pink-secondary min-w-full">
             <div className="container max-auto px-4 sm:px-6 lg:px-10">
                 <div className="flex items-center md:justify-start justify-between h-16">
                     <h1 className="text-xl sm:text-2xl flex whitespace-nowrap">
@@ -25,7 +32,9 @@ const Header = () => {
 
                     <nav className="hidden md:block">
                         <div className="flex items-center space-x-4">
-                            <button className="px-5 py-2 text-lg hover:bg-pink-secondary hover:rounded-2xl">
+                            <button className="px-5 py-2 text-lg hover:bg-pink-secondary hover:rounded-2xl"
+                            onClick={() => navigate('/suggestions')}
+                            >
                                 {translations[language].header_opt1} {/*Suggestions*/}
                             </button>
                             <div className="relative">
@@ -34,15 +43,15 @@ const Header = () => {
                                 </button>
                                 
                                 <div className={`absolute text-custom-text-color bg-white shadow-md shadow-pink-secondary rounded-lg p-4 top-14 w-48 ${isOpenWardrove ? 'block' : 'hidden'}`}>
-                                    <a className="block hover:text-pink-accent px-3 py-2 text-sm">
+                                    <Link to="/gallery" className="block hover:text-pink-accent px-3 py-2 text-sm">
                                         {translations[language].header_opt2_1} {/*Gallery*/}
-                                    </a>
-                                    <a className="block hover:text-pink-accent px-3 py-2 text-sm">
+                                    </Link>
+                                    <Link to="/labels" className="block hover:text-pink-accent px-3 py-2 text-sm">
                                         {translations[language].header_opt2_2} {/*Labels*/}
-                                    </a>
-                                    <a className="block hover:text-pink-accent px-3 py-2 text-sm">
+                                    </Link>
+                                    <Link to="/categories" className="block hover:text-pink-accent px-3 py-2 text-sm">
                                         {translations[language].header_opt2_3} {/*Categories*/}
-                                    </a>
+                                    </Link>
                                 </div>
 
                             </div>
@@ -64,9 +73,9 @@ const Header = () => {
                                     <a className="block hover:text-pink-accent px-3 py-2 text-sm">
                                         {translations[language].header_opt5_2} {/*Theme*/}
                                     </a>
-                                    <a className="block hover:text-pink-accent px-3 py-2 text-sm">
+                                    <Link to="/login" className="block hover:text-pink-accent px-3 py-2 text-sm">
                                         {translations[language].header_opt5_3} {/*Logout*/}
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -92,21 +101,46 @@ const Header = () => {
 
                     <div className="md:hidden relative">
                         <div className={`absolute text-custom-text-color bg-white shadow-md shadow-pink-secondary rounded-lg p-4 right-0 top-14 w-48 ${isOpenHamburger ? 'block' : 'hidden'}`}>
-                            <a className="block hover:text-pink-accent px-3 py-2 text-sm">
+                            <Link to="/suggestions" className="block hover:text-custom-text-color hover:bg-pink-faded px-3 py-2 text-sm transition-all duration-300">
                                 {translations[language].header_opt1} {/*Suggestions H-Menu*/}
-                            </a>
-                            <a className="block hover:text-pink-accent px-3 py-2 text-sm">
+                            </Link>
+                            <a className="block hover:text-custom-text-color hover:bg-pink-faded px-3 py-2 text-sm transition-all duration-300"
+                                onClick={() => setIsOpenHamburger_Wardrove(!isOpenHamburger_Wardrove)}
+                            >
                                 {translations[language].header_opt2} {/*Wardrobe H-Menu*/}
                             </a>
-                            <a className="block hover:text-pink-accent px-3 py-2 text-sm">
+
+                            <Link to="/gallery" className={`block bg-pink-50 hover:text-pink-accent px-3 py-2 text-sm transition-all duration-300 ${isOpenHamburger_Wardrove ? 'block' : 'hidden'}`}>
+                                ✅{translations[language].header_opt2_1} {/*Gallery*/}
+                            </Link>
+                            <Link to="/labels" className={`block bg-pink-50 hover:text-pink-accent px-3 py-2 text-sm transition-all duration-300 ${isOpenHamburger_Wardrove ? 'block' : 'hidden'}`}>
+                                ✅{translations[language].header_opt2_2} {/*Labels*/}
+                            </Link>
+                            <Link to="/categories" className={`block bg-pink-50 hover:text-pink-accent px-3 py-2 text-sm transition-all duration-300 ${isOpenHamburger_Wardrove ? 'block' : 'hidden'}`}>
+                                ✅{translations[language].header_opt2_3} {/*Categories*/}
+                            </Link>
+
+                            <a className="block hover:text-custom-text-color hover:bg-pink-faded px-3 py-2 text-sm transition-all duration-300">
                                 {translations[language].header_opt3} {/*Favorites H-Menu*/}
                             </a>
-                            <a className="block hover:text-pink-accent px-3 py-2 text-sm">
+                            <a className="block hover:text-custom-text-color hover:bg-pink-faded px-3 py-2 text-sm transition-all duration-300">
                                 {translations[language].header_opt4} {/*Guide H-Menu*/}
                             </a>
-                            <a className="block hover:text-pink-accent px-3 py-2 text-sm">
+                            <a className="block hover:text-custom-text-color hover:bg-pink-faded px-3 py-2 text-sm transition-all duration-300"
+                                onClick={() => setIsOpenHamburger_Account(!isOpenHamburger_Account)}
+                            >
                                 {translations[language].header_opt5} {/*Account H-Menu*/}
                             </a>
+                            
+                            <a className={`block bg-pink-50 hover:text-pink-accent px-3 py-2 text-sm transition-all duration-300 ${isOpenHamburger_Account ? 'block' : 'hidden'}`}>
+                                ✅{translations[language].header_opt5_1} {/*Edit*/}
+                            </a>
+                            <a className={`block bg-pink-50 hover:text-pink-accent px-3 py-2 text-sm transition-all duration-300 ${isOpenHamburger_Account ? 'block' : 'hidden'}`}>
+                                ✅{translations[language].header_opt5_2} {/*Theme*/}
+                            </a>
+                            <Link to="/login" className={`block bg-pink-50 hover:text-pink-accent px-3 py-2 text-sm transition-all duration-300 ${isOpenHamburger_Account ? 'block' : 'hidden'}`}>
+                                ✅{translations[language].header_opt5_3} {/*Logout*/}
+                            </Link>
                         </div>
                         <button className="hover:bg-pink-secondary hover:rounded-xl p-2" onClick={() => setIsOpenHamburger(!isOpenHamburger)}>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

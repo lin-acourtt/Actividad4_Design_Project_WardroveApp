@@ -8,9 +8,11 @@ const Page_Signup = () => {
     return (
     <>
         <LanguageProvider>
-        <div className="min-h-screen flex-col font-[Nunito] caret-transparent">
+        <div className="flex min-h-screen flex-col font-[Nunito] caret-transparent">
             <Header_Login />
-            <Body_Signup />
+            <main className="flex-1">
+                <Body_Signup />
+            </main>
             <Footer />
         </div>
         </LanguageProvider>

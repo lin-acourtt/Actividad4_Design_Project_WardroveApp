@@ -8,7 +8,7 @@ const Footer = () => {
     const {language, setLanguage} = useContext(LanguageContext);
 
     return (
-        <footer className="bg-pink-faded text-custom-text-color py-4 h-full">
+        <footer className="bg-pink-faded text-custom-text-color py-4 shrink-0 border border-pink-accent border-1">
             <div className="container mx-auto text-center">
                 <p className="text-sm">
                     &copy; {new Date().getFullYear()} {translations[language].footer_appname}

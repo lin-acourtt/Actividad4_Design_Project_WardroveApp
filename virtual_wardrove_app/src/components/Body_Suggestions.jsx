@@ -43,7 +43,7 @@ const Body_Suggestions = () => {
 
     return (
         <>
-            <div className="flex h-screen w-full flex-col md:flex-row">
+            <div className="flex min-h-full w-full flex-col md:flex-row border">
 
                 {/* This is where the picture with the outfit will be displayed */}
                 <div className="md:basis-2/3 p-4 bg-custom-bg-color flex justify-center items-center">
@@ -57,7 +57,7 @@ const Body_Suggestions = () => {
                     
                 </div>
 
-                <div className="md:basis-1/3 px-4 md:py-10 py-4 bg-custom-bg-color flex justify-center">
+                <div className="md:basis-1/3 px-4 md:py-10 py-4 bg-custom-bg-color justify-center">
                     <div className="flex flex-col items-center justify-center md:gap-15 gap-5">
                         <button className="bg-pink-secondary w-70 h-20 border-3 border-double border-pink-accent rounded-2xl hover:bg-pink-primary hover:rounded-full transition-all duration-1000" onClick={handleGenerate}> 
                             {translations[language].body_sgt_bt1}
