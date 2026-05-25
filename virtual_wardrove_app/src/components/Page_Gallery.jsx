@@ -9,7 +9,7 @@ const Page_Gallery = () => {
     return (
     <>
         <LanguageProvider>
-        <div className="bg-green-100 flex min-h-screen flex-col font-[Nunito] caret-transparent">
+        <div className="flex min-h-screen flex-col font-[Nunito] caret-transparent">
             <Header />
             <main className="flex-1">
                 <Body_Gallery />

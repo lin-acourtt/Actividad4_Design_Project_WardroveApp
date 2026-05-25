@@ -9,17 +9,17 @@ import Component_PhotoIcons from "./Component_PhotoIcons.jsx";
 const Body_Gallery = () => {
 
     const galleryItems = [
-        "src/assets/gallery/gallery0.png",
-        "src/assets/gallery/gallery1.png",
-        "src/assets/gallery/gallery2.png",
-        "src/assets/gallery/gallery3.png",
-        "src/assets/gallery/gallery4.png",
-        "src/assets/gallery/gallery5.png",
-        "src/assets/gallery/gallery6.png",
-        "src/assets/gallery/gallery7.png",
-        "src/assets/gallery/gallery8.png",
-        "src/assets/gallery/gallery9.png",
-        "src/assets/gallery/gallery10.png"
+        "../src/assets/gallery/gallery0.png",
+        "../src/assets/gallery/gallery1.png",
+        "../src/assets/gallery/gallery2.png",
+        "../src/assets/gallery/gallery3.png",
+        "../src/assets/gallery/gallery4.png",
+        "../src/assets/gallery/gallery5.png",
+        "../src/assets/gallery/gallery6.png",
+        "../src/assets/gallery/gallery7.png",
+        "../src/assets/gallery/gallery8.png",
+        "../src/assets/gallery/gallery9.png",
+        "../src/assets/gallery/gallery10.png"
     ]; 
 
     const categories = useCategories();
