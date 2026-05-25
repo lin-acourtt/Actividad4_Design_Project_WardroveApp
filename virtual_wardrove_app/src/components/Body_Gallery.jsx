@@ -6,20 +6,32 @@ import { useContext } from 'react';
 import {useCategories} from "../data/Categories.jsx";
 import Component_PhotoIcons from "./Component_PhotoIcons.jsx";
 
+import Gallery0 from "../assets/gallery/gallery0.png";
+import Gallery1 from "../assets/gallery/gallery1.png";
+import Gallery2 from "../assets/gallery/gallery2.png";
+import Gallery3 from "../assets/gallery/gallery3.png";
+import Gallery4 from "../assets/gallery/gallery4.png";
+import Gallery5 from "../assets/gallery/gallery5.png";
+import Gallery6 from "../assets/gallery/gallery6.png";
+import Gallery7 from "../assets/gallery/gallery7.png";
+import Gallery8 from "../assets/gallery/gallery8.png";
+import Gallery9 from "../assets/gallery/gallery9.png";
+import Gallery10 from "../assets/gallery/gallery10.png";
+
 const Body_Gallery = () => {
 
     const galleryItems = [
-        "../src/assets/gallery/gallery0.png",
-        "../src/assets/gallery/gallery1.png",
-        "../src/assets/gallery/gallery2.png",
-        "../src/assets/gallery/gallery3.png",
-        "../src/assets/gallery/gallery4.png",
-        "../src/assets/gallery/gallery5.png",
-        "../src/assets/gallery/gallery6.png",
-        "../src/assets/gallery/gallery7.png",
-        "../src/assets/gallery/gallery8.png",
-        "../src/assets/gallery/gallery9.png",
-        "../src/assets/gallery/gallery10.png"
+        Gallery0,
+        Gallery1,
+        Gallery2,
+        Gallery3,
+        Gallery4,
+        Gallery5,
+        Gallery6,
+        Gallery7,
+        Gallery8,
+        Gallery9,
+        Gallery10
     ]; 
 
     const categories = useCategories();
