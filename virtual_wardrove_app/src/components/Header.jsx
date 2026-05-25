@@ -78,6 +78,10 @@ const Header = () => {
                                     </Link>
                                 </div>
                             </div>
+                            <a href="https://www.youtube.com/watch?v=dqP5n3yL2RU" target="_blank">
+                            <button className=" cursor-pointer px-5 py-2 text-lg rounded-2xl border-3 border-pink-950 bg-rose-500 hover:bg-fuchsia-900 hover:rounded-2xl">
+                                VIDEO
+                            </button></a>
                         </div>
                     </nav>
 
