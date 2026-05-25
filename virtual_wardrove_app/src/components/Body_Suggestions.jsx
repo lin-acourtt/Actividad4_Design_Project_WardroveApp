@@ -46,7 +46,7 @@ const Body_Suggestions = () => {
             <div className="flex min-h-full w-full flex-col md:flex-row border">
 
                 {/* This is where the picture with the outfit will be displayed */}
-                <div className="md:basis-2/3 p-4 bg-custom-bg-color flex justify-center items-center">
+                <div className="md:basis-2/3 p-4 flex justify-center items-center">
                     <div className="h-full object-contain block">
                         <img
                             src={listImages[imageIndex]}
